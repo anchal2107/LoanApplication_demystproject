@@ -13,6 +13,7 @@ const BalanceSheet = (props) => {
     useEffect(() => {
         const fetchData = async () => {
           setIsSelectAll(false);
+          setSelectedEntry([]);
             try {       
               const response = await fetch(`http://localhost:3000/loan/balance-sheet?bankId=${bankId}`);      
               if (!response.ok) {

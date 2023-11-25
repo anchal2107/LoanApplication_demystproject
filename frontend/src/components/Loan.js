@@ -57,7 +57,7 @@ const Loan = () => {
               <td>{entry.name}</td>
               <td>{entry.yearEstablished }</td>       
               <td>
-              <button  onClick={()=>selectBankHandler(entry.id,entry.name)}>Get</button>
+              <button  onClick={()=>selectBankHandler(entry.id,entry.name)}> {(selectBank && selectBank.bankId == entry.id)? 'selected' : 'Get '}</button>
               </td>     
             </tr>
           ))}

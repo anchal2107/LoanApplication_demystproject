@@ -1,0 +1,7 @@
+**/.DS_Store
+**/package-lock.json
+**/node_modules
+forntend/.DS_Store
+**/.vscode
+**/dist
+**/.vscode/**.*
